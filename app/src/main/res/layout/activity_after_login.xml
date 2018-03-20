@@ -11,21 +11,90 @@
         android:id="@+id/button"
         android:layout_width="107dp"
         android:layout_height="64dp"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        android:text="서연이 버튼"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/B_schedule"
+        android:layout_marginEnd="50dp"
+        android:text="Button"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="73dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/B_schedule"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="137dp"
-        android:text="Button"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="111dp"
+        android:text="일정 관리"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="188dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/B_schedule"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/button"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/B_bluetooth"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="BlueTooth" />
+
+    <ListView
+        android:id="@+id/lvMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/etMessage"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="84dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#ffffff"
+        android:fadingEdge="none"
+        android:layerType="software" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:hint="메시지를 입력하세요"
+        android:textColor="#333333"
+        android:textColorHint="#aaaaaa" />
+
+    <ImageView
+        android:id="@+id/ivSendBtn"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_alignBottom="@+id/etMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/etMessage"
+        android:layout_toEndOf="@+id/etMessage"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_send_black_24dp" />
+
+    <TextView
+        android:id="@+id/fortest"
+        android:text="123123123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etMessage"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

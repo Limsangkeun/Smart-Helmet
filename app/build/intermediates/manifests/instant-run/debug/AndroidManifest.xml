@@ -10,6 +10,10 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -20,16 +24,23 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.MainActivity" >
+        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.RegisterActivity" />
+
+        <service android:name="com.example.sangkeunlim.smartsafetyhelmetv2.ReadDataService" />
+
+        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Login.RegisterActivity" />
         <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.AfterLogin" />
-        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.ConnectDB" />
+        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.PersonalSchedule" />
+        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.OfficialSchedule" />
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:theme="@style/Theme.Transparent" />
 
         <meta-data
             android:name="android.support.VERSION"

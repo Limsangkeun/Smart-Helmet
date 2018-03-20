@@ -1,4 +1,4 @@
-#Sat Feb 10 03:06:52 KST 2018
-base.0=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Fri Mar 16 15:06:06 KST 2018
+base.0=D\:\\AndroidProject\\SmartSafetyHelmetV2 (3)\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
 path.0=classes.dex
 renamed.0=classes.dex

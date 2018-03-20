@@ -1,19 +1,4 @@
-#Sat Feb 10 03:07:03 KST 2018
-path.1=classes.dex
+#Tue Mar 20 20:58:45 KST 2018
+base.0=C\:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\38
 path.0=classes.dex
-renamed.5=classes6.dex
-renamed.4=classes5.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.4=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.3=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-base.2=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.1=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.0=D\:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-path.5=classes.dex
-path.4=classes.dex
-path.3=classes.dex
-path.2=classes.dex
