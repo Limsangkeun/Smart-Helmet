@@ -7,6 +7,7 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,7 +30,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         initializedButton();
     }
@@ -62,10 +63,10 @@ public class MainActivity extends Activity {
                         Toast.makeText(MainActivity.this, "PW를 입력해주세요", Toast.LENGTH_LONG).show();
                     } else {
                         String result;
-                        String Login = "Login";
+                        String Login = "LoginApp";
                         CustomTask task = new CustomTask();
-                        //   result = task.execute(Login, S_ID, S_PW).get();
-                        result = "Login Success";
+                        result = task.execute(Login, S_ID, S_PW).get();
+
                         if (result.equals("Login Success")) {
                             Intent AfterLoginIntent = new Intent(MainActivity.this, AfterLogin.class);
                             MainActivity.this.startActivity(AfterLoginIntent);

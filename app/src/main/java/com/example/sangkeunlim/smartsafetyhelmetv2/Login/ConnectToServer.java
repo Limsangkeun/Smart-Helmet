@@ -22,13 +22,14 @@ class CustomTask extends AsyncTask<String, Void, String> {
         try {
             String str;
             URL url = null;
-            if(strings[0].equals("Login")) {
-                url = new URL("http://192.168.80.108:8080/SignUp/Login.jsp");
-                sendMsg = "id=" + strings[1] + "&pwd=" + strings[2];
+            if(strings[0].equals("LoginApp")) {
+                url = new URL("http://192.168.181.153:8080/SmartHelmet/LoginApp.jsp");
+                sendMsg = "userID=" + strings[1] + "&userPassword=" + strings[2];
             }else if(strings[0].equals("Regist"))
             {
-                url = new URL("http://192.168.80.108:8080/SignUp/Regist.jsp");
-                sendMsg= "id="+strings[1]+"&pwd="+strings[2]+"&name="+strings[3]+"&age="+strings[4]+"&phone="+strings[5];
+                url = new URL("http://192.168.181.153:8080/SmartHelmet/Regist.jsp");
+                sendMsg= "userID="+strings[1]+"&userPassword="+strings[2]+"&userName="+strings[3]+"&userGender="
+                        +strings[4]+"&userEmail="+strings[5]+"&userBelong="+strings[6]+"&userAuthority="+strings[7];
             }
             //URL 객체 생성
             HttpURLConnection conn = (HttpURLConnection) url.openConnection(); //http 통신 객체 생성
