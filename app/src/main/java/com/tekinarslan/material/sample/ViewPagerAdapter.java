@@ -19,13 +19,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             // Open FragmentTab1.java
             case 0:
-                return SampleFragment.newInstance(position);
+                return SampleFragment.newInstance(position); //회원가입
             case 1:
-                return SampleFragment.newInstance(position);
+                return SampleFragment1.newInstance(position); //로그인
             case 2:
-                return SampleFragment.newInstance(position);
+                return SampleFragment2.newInstance(position); //관리자 게시판
             case 3:
-                return SampleFragment.newInstance(position);
+                return SampleFragment3.newInstance(position); // 근로자 게시판
             case 4:
                 return SampleFragment.newInstance(position);
             case 5:

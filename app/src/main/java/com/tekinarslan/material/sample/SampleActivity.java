@@ -23,8 +23,8 @@ public class SampleActivity extends ActionBarActivity {
 
     private ListView mDrawerList;
     ViewPager pager;
-    private String[] titles = new String[]{"회원가입", "출근부", "근로자 검색", "게시판"
-            , "상황판", "옵션 설정", "Sample Tab 7", "Sample Tab 8"};
+    private String[] titles = new String[]{"회원가입", "로그인", "관리자 게시판", "근로자 게시판"
+            , "상황판", "출근부", "근로자 검색 ", "옵션 설정"};
     private Toolbar toolbar;
 
     SlidingTabLayout slidingTabLayout;

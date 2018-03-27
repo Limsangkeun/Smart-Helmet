@@ -9,15 +9,15 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class SampleFragment extends Fragment {
+public class SampleFragment2 extends Fragment {
 
     private static final String ARG_POSITION = "position";
 
     private int position;
     public WebView mWebView;
 
-    public static SampleFragment newInstance(int position) {
-        SampleFragment f = new SampleFragment();
+    public static SampleFragment2 newInstance(int position) {
+        SampleFragment2 f = new SampleFragment2();
         Bundle b = new Bundle();
         b.putInt(ARG_POSITION, position);
         f.setArguments(b);
@@ -31,7 +31,7 @@ public class SampleFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.page, container, false);
 
         mWebView = (WebView) rootView.findViewById(R.id.webview);
-        mWebView.loadUrl("http://192.168.100.188:8080/JSP_D_2013152014/join.jsp");
+        mWebView.loadUrl("http://192.168.100.188:8080/JSP_D_2013152014/bbs.jsp");
 
         // Enable Javascript
         WebSettings webSettings = mWebView.getSettings();
