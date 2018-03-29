@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dip">
+
+        <ImageView
+            android:id="@+id/ivActionBarIcon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tvActionbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivActionBarIcon"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/tvActionbarBtnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="연결"/>
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/src/main/res/layout/actionbar.xml -->

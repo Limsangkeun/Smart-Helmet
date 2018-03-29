@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/stkim/Documents/Development/mabupnote-v2-android-2/android-sdk_r24/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-e2d9d1040218623950332cc64d93bfa1bf4b419a.jar" />
+    </item>
+    <item
+        jar="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-9284fa2d939f247fa7f43bc84985b8b0431f0204.jar" />
+    </item>
+    <item
+        jar="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/pre-dexed/debug/classes-c1a544e45a4a4fe49135ded36098ebb0d0bb5c21.jar" />
+    </item>
+    <item
+        jar="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/build/intermediates/pre-dexed/debug/classes-c1ca4f816f15de024cc9666bcbaeefd426b2a9a1.jar" />
+    </item>
+
+</items>

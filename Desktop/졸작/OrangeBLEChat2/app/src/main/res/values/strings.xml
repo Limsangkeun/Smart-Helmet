@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Smart Helmet</string>
+    <string name="action_connect">연결</string>
+</resources>

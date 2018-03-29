@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OrangeBLE Chat</string>
+    <string name="action_connect">연결</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dip"
+    android:background="@drawable/shape_rounded_conner" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/shape_rounded_conner">
+
+        <LinearLayout
+            android:id="@+id/llDialogScanning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/shape_rounded_conner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:textSize="14dip"
+                android:textColor="#555555"
+                android:text="검색중입니다..."/>
+
+            <ProgressBar
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_vertical"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDialogScanEnable"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textSize="14dip"
+            android:textColor="#555555"
+            android:text="중지"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:textSize="14dip"
+        android:background="#353a3d"
+        android:textColor="#ffffff"
+        android:text="검색된 블루투스 장치"/>
+
+    <ListView
+        android:id="@+id/lvScannedDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#dddddd"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:layerType="software"
+        android:cacheColorHint="#ffffff"
+        android:background="@drawable/shape_rounded_conner"/>
+
+</LinearLayout>

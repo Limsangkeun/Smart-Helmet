@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#353a3d">
+
+    <cc.kocoafab.android.orangeblechat.ActionBar
+        android:id="@+id/customActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#eeeeee">
+
+        <ListView
+            android:id="@+id/lvMessageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:layerType="software"
+            android:cacheColorHint="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/rlInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#eeeeee">
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dip"
+                android:textColor="#333333"
+                android:hint="메시지를 입력하세요"
+                android:textColorHint="#aaaaaa"/>
+
+            <LinearLayout
+                android:id="@+id/llSendBtnLayout"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:background="#eeeeee">
+
+                <ImageView
+                    android:id="@+id/ivSendBtn"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:scaleType="fitXY"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_send_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/stkim/Documents/Development/pilot/OrangeBLEChat/app/src/main/res/layout/activity_main.xml -->
