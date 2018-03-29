@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/device_waiting" />
+
+    <LinearLayout
+        android:id="@+id/llDesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/ivIcon">
+
+        <TextView
+            android:id="@+id/tvFirstLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Example application"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSecondLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Description"
+            android:textColor="#555555"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginRight="15dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#555555"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

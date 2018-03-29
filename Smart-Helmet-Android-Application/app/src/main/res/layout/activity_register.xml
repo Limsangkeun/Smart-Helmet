@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.sangkeunlim.smartsafetyhelmetv2.Login.RegisterActivity">
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="회원가입"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text1"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text2"
+                android:gravity="center"
+                android:text="P/W"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text3"
+                android:gravity="center"
+                android:text="P/W 확인"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text4"
+                android:gravity="center"
+                android:text="이름"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text5"
+                android:gravity="center"
+                android:text="성별"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text6"
+                android:gravity="center"
+                android:text="이메일"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text7"
+                android:gravity="center"
+                android:text="소속(부서)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text8"
+                android:gravity="center"
+                android:text="관리자 여부"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/E_ID2"
+                android:layout_width="250dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/text1"
+                android:maxLength="12"
+                android:hint="Hong123" />
+
+            <EditText
+                android:id="@+id/E_PW2"
+                android:layout_width="250dp"
+                android:layout_height="42dp"
+                android:layout_alignStart="@+id/E_ID2"
+                android:hint="q1w2e3r4"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:layout_below="@+id/E_ID2" />
+
+            <EditText
+                android:id="@+id/E_RPW"
+                android:layout_width="250dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:inputType="textPassword"
+                android:layout_below="@+id/E_PW2"
+                android:maxLength="12"
+                android:hint="q1w2e3r4" />
+
+            <EditText
+                android:id="@+id/NAME"
+                android:layout_width="250dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/E_RPW"
+                android:hint="홍길동" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text6"
+                android:layout_alignStart="@+id/NAME"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/manBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/womanBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginRight="50dp"
+                    android:text="여자" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/E_MAIL"
+                android:layout_width="250dp"
+                android:layout_height="42dp"
+                android:layout_alignBaseline="@+id/radioGroup"
+                android:layout_below="@+id/radioGroup"
+                android:layout_alignParentEnd="true"
+                android:inputType="textEmailAddress"
+                android:maxLength="13"
+                android:hint="xxx@xxxx.com" />
+
+            <EditText
+                android:id="@+id/BELONGS"
+                android:layout_width="250dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/E_MAIL"
+                android:hint="공사장 1층" />
+
+
+            <RadioButton
+                android:id="@+id/manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/BELONGS"
+                android:layout_below="@+id/BELONGS"
+                android:text="그렇다 나는 관리자이다"
+                android:onClick="onRadioClicked"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/B_BACK"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="돌아가기"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/B_DONE"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="회원가입 완료"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

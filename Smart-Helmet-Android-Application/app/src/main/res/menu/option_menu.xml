@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Personal"
+        android:title="개인 일정" />
+    <item
+        android:id="@+id/Official"
+        android:title="전체 일정"/>
+
+    </menu>
