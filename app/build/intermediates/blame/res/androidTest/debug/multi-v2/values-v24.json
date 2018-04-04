@@ -36,7 +36,17 @@
             "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\49da70ef4354df231ac0cc94e0971cb3\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,212,347,416,480,549",
+                        "endColumns": "156,134,68,63,68,69",
+                        "endOffsets": "207,342,411,475,544,614"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\a5386b404b58538ec8eed36d0bdf90ce\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -50,16 +60,6 @@
                         "startOffsets": "619,685,746,812",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "680,741,807,874"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b0a9dca00e83da8a5a3ef102eea1b9cd\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
                     }
                 }
             ]

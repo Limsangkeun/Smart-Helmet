@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b0a9dca00e83da8a5a3ef102eea1b9cd\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -20,6 +20,21 @@
             "map": [
                 {
                     "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\94f2d10008c34992a36f6f0059eac7e6\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

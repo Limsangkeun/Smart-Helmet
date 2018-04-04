@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+
+    }
+}
+apply plugin: 'com.android.library'
+
+
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.0.0'
+}

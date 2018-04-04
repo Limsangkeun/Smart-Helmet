@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b0a9dca00e83da8a5a3ef102eea1b9cd\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -20,6 +20,21 @@
             "map": [
                 {
                     "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\94f2d10008c34992a36f6f0059eac7e6\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

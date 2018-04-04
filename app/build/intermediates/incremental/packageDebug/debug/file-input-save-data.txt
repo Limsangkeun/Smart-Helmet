@@ -1,7 +1,15 @@
 #Internal package file, do not edit.
-#Tue Mar 20 20:58:46 KST 2018
+#Tue Apr 03 19:47:27 KST 2018
+1.base=C\:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\38
+2.path=Chunkfive.otf
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\38
-0.path=classes.dex
-0.set=DEX
-count=1
+2.base=C\:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=DEX
+0.path=Pacifico.ttf
+0.set=ASSET
+0.base=C\:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\assets\\debug
+2.baseType=DIRECTORY
+1.path=classes.dex

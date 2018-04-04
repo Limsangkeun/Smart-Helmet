@@ -23,11 +23,11 @@ class CustomTask extends AsyncTask<String, Void, String> {
             String str;
             URL url = null;
             if(strings[0].equals("LoginApp")) {
-                url = new URL("http://192.168.181.153:8080/SmartHelmet/LoginApp.jsp");
+                url = new URL("http://192.168.181.192:8080/SmartHelmet/LoginApp.jsp");
                 sendMsg = "userID=" + strings[1] + "&userPassword=" + strings[2];
             }else if(strings[0].equals("Regist"))
             {
-                url = new URL("http://192.168.181.153:8080/SmartHelmet/Regist.jsp");
+                url = new URL("http://192.168.181.192:8080/SmartHelmet/Regist.jsp");
                 sendMsg= "userID="+strings[1]+"&userPassword="+strings[2]+"&userName="+strings[3]+"&userGender="
                         +strings[4]+"&userEmail="+strings[5]+"&userBelong="+strings[6]+"&userAuthority="+strings[7];
             }

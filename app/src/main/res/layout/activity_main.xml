@@ -4,30 +4,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
+
 
     <com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity2
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity2>
+
+
 <RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:duplicateParentState="true"
-    tools:context="com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity">
+    tools:context="com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity"
+    tools:ignore="missingPrefix">
 
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="379dp"
         android:layout_height="99dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="110dp"
+        android:layout_below="@+id/Connection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="Welcome to SSH Application"
-        android:textSize="30sp"
         android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/E_ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,19 +75,6 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/E_PW"
-        android:layout_width="270dp"
-        android:layout_height="42dp"
-        android:layout_alignStart="@+id/E_ID"
-        android:layout_below="@+id/E_ID"
-        android:ems="10"
-        android:maxLength="12"
-        android:hint="Enter PassWord"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/E_ID"
-        tools:layout_editor_absoluteX="106dp" />
-
-    <EditText
         android:id="@+id/E_ID"
         android:layout_width="270dp"
         android:layout_height="42dp"
@@ -94,28 +87,50 @@
         app:layout_constraintStart_toEndOf="@+id/E_PW"
         tools:layout_editor_absoluteY="139dp" />
 
-    <Button
+    <EditText
+        android:id="@+id/E_PW"
+        android:layout_width="270dp"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/E_ID"
+        android:layout_below="@+id/E_ID"
+        android:ems="10"
+        android:maxLength="12"
+        android:hint="Enter PassWord"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/E_ID"
+        tools:layout_editor_absoluteX="106dp" />
+
+
+
+    <com.dd.morphingbutton.MorphingButton
         android:id="@+id/B_LOGIN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/E_PW"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop = "20dp"
+        android:layout_centerInParent = "true"
         android:layout_below="@+id/textView5"
-        android:text="로그인" />
+        android:onClick="btnMorph"/>
 
-    <Button
+    <com.dd.morphingbutton.MorphingButton
         android:id="@+id/B_REGIST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/B_LOGIN"
-    android:layout_alignBottom="@+id/B_LOGIN"
-    android:layout_marginStart="29dp"
-    android:layout_toEndOf="@+id/B_LOGIN"
-    android:text="회원가입" />
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/B_LOGIN"
+        android:layout_centerInParent = "true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:onClick="btnMorph"/>
 
-<TextView
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/Connection"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Connection"/>
 
     </RelativeLayout>
+    <ImageView
+        android:id="@+id/constructorImg"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/mickeymouse"/>
 </FrameLayout>

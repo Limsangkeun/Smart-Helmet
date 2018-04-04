@@ -1,6 +1,22 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\values-v25\\values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\AndroidProject\\SmartSafetyHelmetV2 (3)\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
@@ -20,7 +36,7 @@
             "outputFile": "C:\\Users\\donggun\\AndroidStudioProjects\\SmartSafetyHelmetV2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b0a9dca00e83da8a5a3ef102eea1b9cd\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\donggun\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b190766c6ed95ce21bf37387b92bac74\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

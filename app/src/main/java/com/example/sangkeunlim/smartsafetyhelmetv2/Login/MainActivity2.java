@@ -5,8 +5,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Rect;
-import android.os.Handler;
-import android.os.Message;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -38,9 +36,14 @@ public class MainActivity2 extends View {
 
     private void initializedBackground() {
         if (mBitmap == null) {
-            mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.harmonious_family);
+            mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.construction_site);
         }
 
+
+
+
+
+/*
         mHandler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -64,6 +67,7 @@ public class MainActivity2 extends View {
                 mHandler.sendEmptyMessageDelayed(0, FPS);
             }
         };
+        */
     }
 
     @Override
