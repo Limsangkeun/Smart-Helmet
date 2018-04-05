@@ -5,6 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
+        android:maxSdkVersion="17"
         android:minSdkVersion="23"
         android:targetSdkVersion="26" />
 
@@ -16,6 +17,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Font.CustomFontApp"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,9 +37,9 @@
         <service android:name="com.example.sangkeunlim.smartsafetyhelmetv2.ReadDataService" />
 
         <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Login.RegisterActivity" />
-        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.AfterLogin" />
         <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.PersonalSchedule" />
         <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.OfficialSchedule" />
+        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity" />
         <activity
             android:name="com.gun0912.tedpermission.TedPermissionActivity"
             android:theme="@style/Theme.Transparent" />

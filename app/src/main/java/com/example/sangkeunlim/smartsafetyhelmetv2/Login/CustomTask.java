@@ -1,6 +1,7 @@
 package com.example.sangkeunlim.smartsafetyhelmetv2.Login;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +15,7 @@ import java.net.URL;
  * Created by SangKeun LIM on 2018-02-09.
  */
 
-class CustomTask extends AsyncTask<String, Void, String> {
+public class CustomTask extends AsyncTask<String, Void, String> {
     String sendMsg, receiveMsg;
 
     @Override
@@ -23,13 +24,18 @@ class CustomTask extends AsyncTask<String, Void, String> {
             String str;
             URL url = null;
             if(strings[0].equals("LoginApp")) {
-                url = new URL("http://192.168.181.192:8080/SmartHelmet/LoginApp.jsp");
+                url = new URL("https://wbkim11.cafe24.com/SmartHelmet/LoginApp.jsp");
                 sendMsg = "userID=" + strings[1] + "&userPassword=" + strings[2];
             }else if(strings[0].equals("Regist"))
             {
-                url = new URL("http://192.168.181.192:8080/SmartHelmet/Regist.jsp");
+                url = new URL("https://wbkim11.cafe24.com/SmartHelmet/Regist.jsp");
                 sendMsg= "userID="+strings[1]+"&userPassword="+strings[2]+"&userName="+strings[3]+"&userGender="
                         +strings[4]+"&userEmail="+strings[5]+"&userBelong="+strings[6]+"&userAuthority="+strings[7];
+            }else if(strings[0].equals("sendData"))
+            {
+                url = new URL("https://wbkim11.cafe24.com/SmartHelmet/Sensor.jsp");
+                sendMsg = "userID="+strings[2]+"&kind="+strings[1]+"&data="+strings[3];
+                Log.i("출근부",sendMsg);
             }
             //URL 객체 생성
             HttpURLConnection conn = (HttpURLConnection) url.openConnection(); //http 통신 객체 생성

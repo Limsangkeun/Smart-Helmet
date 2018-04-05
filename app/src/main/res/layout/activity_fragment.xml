@@ -29,6 +29,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="출근부" />
+        <Button
+            android:id="@+id/B_bluetooth"
+            android:layout_width="107dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="BlueTooth" />
     </LinearLayout>
 
     <android.support.v4.view.ViewPager

@@ -28,7 +28,6 @@
         </activity>
         <service android:name=".ReadDataService" />
         <activity android:name=".Login.RegisterActivity" />
-        <activity android:name=".AfterLogin" />
         <activity android:name=".Schedule.PersonalSchedule" />
         <activity android:name=".Schedule.OfficialSchedule"/>
         <activity android:name=".Fragment.FragmentActivity"/>
