@@ -26,7 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".ReadDataService" />
+
+        <service android:name=".GPSTracker"/>
         <activity android:name=".Login.RegisterActivity" />
         <activity android:name=".Schedule.PersonalSchedule" />
         <activity android:name=".Schedule.OfficialSchedule"/>

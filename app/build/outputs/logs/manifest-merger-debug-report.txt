@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:2:1-13:12
 MERGED from [:morphing] D:\AndroidProject\SmartSafetyHelmetV2\morphing\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
@@ -18,20 +18,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LI
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f973e7a9d8398e7c6a478fd3701dac8e\AndroidManifest.xml:17:1-30:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:3:5-58
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:11-69
@@ -106,7 +106,7 @@ INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:14:5-34:19
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:14:5-35:19
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:9:5-13:19
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:9:5-13:19
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:11:5-20
@@ -163,26 +163,26 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:26:27-74
-service#com.example.sangkeunlim.smartsafetyhelmetv2.ReadDataService
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:29:9-52
+service#com.example.sangkeunlim.smartsafetyhelmetv2.GPSTracker
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:30:9-46
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:29:18-49
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:30:18-44
 activity#com.example.sangkeunlim.smartsafetyhelmetv2.Login.RegisterActivity
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:30:9-60
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:9-60
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:30:19-57
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:19-57
 activity#com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.PersonalSchedule
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:9-63
-	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:19-60
-activity#com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.OfficialSchedule
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:9-62
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:9-63
 	android:name
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:19-60
-activity#com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity
+activity#com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.OfficialSchedule
 ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:33:9-62
 	android:name
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:33:19-60
+activity#com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:34:9-62
+	android:name
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:34:19-60
 activity#com.gun0912.tedpermission.TedPermissionActivity
 ADDED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:10:9-12:56
 	android:theme

@@ -1,13 +1,18 @@
 package com.example.sangkeunlim.smartsafetyhelmetv2.Fragment;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -20,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
+import com.example.sangkeunlim.smartsafetyhelmetv2.GPSTracker;
 import com.example.sangkeunlim.smartsafetyhelmetv2.Login.CustomTask;
 import com.example.sangkeunlim.smartsafetyhelmetv2.MessageC.Message;
 import com.example.sangkeunlim.smartsafetyhelmetv2.MessageC.MessageListAdapter;
@@ -37,7 +43,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 
 /**
@@ -86,14 +91,18 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
     private String att ="";
     private String abs ="";
     ViewPager vp;
-    private final long FINISH_INTERVAL_TIME = 2000;
+    private final long FINISH_INTERVAL_TIME = 200;
     private long   backPressedTime = 0;
-
+    @SuppressLint("HandlerLeak")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
-
+        if ( Build.VERSION.SDK_INT >= 23 &&
+                ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_FINE_LOCATION  },
+                    0 );
+        }
         vp = (ViewPager)findViewById(R.id.vp);
         Button btn_first = (Button)findViewById(R.id.btn_first);
         Button btn_second = (Button)findViewById(R.id.btn_second);
@@ -145,6 +154,9 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
             }
         });
+        Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
+        startService(intent);
+
     }
 
     View.OnClickListener movePageListener = new View.OnClickListener(){
@@ -154,7 +166,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
             vp.setCurrentItem(tag);
         }
     };
-
     private class pagerAdapter extends FragmentStatePagerAdapter{
 
         public pagerAdapter(android.support.v4.app.FragmentManager fm) {
@@ -335,6 +346,8 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         if (mBluetoothService != null) {
             mBluetoothService.release();
         }
+        Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
+        stopService(intent);
         super.onDestroy();
     }
     //뒤로가기 누르면 실행 스캔 중지
@@ -348,6 +361,8 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
         if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
         {
+            Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
+            stopService(intent);
             finishAffinity();
             super.onBackPressed();
         }
@@ -490,28 +505,16 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
                 dataType = "1";
             }
         }
-        try {
-            String s="";
-            if(str.equals("/"))
-            {
-                Log.i("출근부","출근전");
-            }else{
-                s = task2.execute("sendData",dataType,"12",str).get();//
-                Log.i("s의 내용",s);
-            }
-            if(s.equals("1"))
-            {
-                task2.cancel(true);
-                Log.i("데이터 전송","완료");
-            }
-            else{
-                task2.cancel(true);
-                Log.i("데이터 전송", "실패");
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
+        String s="";
+        if(str.equals("점심시간"))
+        {
+        }else if(str.equals("/")){
+        }else if(str.equals("")){
+        }else
+        {
+            task2.execute("sendData",dataType,"12",str);
+            //task2.cancel(true);
+            Log.i("데이터 전송","완료");
         }
 
         if(count >100)
@@ -527,13 +530,11 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd"); //H는 시간 형식이 24
         Date currentTime = new Date();
         String day = sdf.format(currentTime);
-
         Time time = new Time(System.currentTimeMillis());
         Time time2 = new Time(System.currentTimeMillis());
         Time time3 = new Time(System.currentTimeMillis());
         Time time4 = new Time(System.currentTimeMillis());
         Time time5 = new Time(System.currentTimeMillis());
-
         time2.setHours(9);
         time2.setMinutes(00);
         time3.setHours(12);
@@ -542,37 +543,32 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         time4.setMinutes(00);
         time5.setHours(18);
         time5.setMinutes(00);
-        /*if(time.after(time5)){ //&& time.before(time3)){    // 시간을 비교한다.
+        if(time.after(time2) && time.before(time3)){ //&& time.before(time3)){    // 시간을 비교한다.
             if(flag == 0 && Integer.valueOf(str) <15)
             {
                 att = time.toString();
-                //dbHelper.insertatt(day,att);
-                flag=1;
-            }else if(flag==1 && Integer.valueOf(str)>15)
-            {
-                flag=2;
-            }else if(flag ==2 && Integer.valueOf(str)<15)
-            {
-                flag=1;
+                flag=1; //flag == 1이면 출근
+
+            }else{
+                return "";
             }
-        }else if(time.after(time3)&&time.before(time4)){
-            {
-
-            }
-        }else if(time.after(time4)&&time.before(time5)){
-
-
-        }else {
-            if(flag == 1 && Integer.valueOf(str) >15) {
+        }else if(time.after(time3) && time.before(time4))
+        {
+            return "점심시간";
+        }else if(time.after(time4) && Integer.valueOf(str) >15 )
+        {
+            if(flag == 1){
+                flag=0;
                 abs = time.toString();
-                flag = 0;
-                //dbHelper.deleteatt(day);
-                //dbHelper.insertabs(day,att,abs);
+                Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
+                stopService(intent);
+            }else{
+                return "";
             }
+
+
         }
-        Log.i("출근모",att);
-        Log.i("출근모",abs);*/
-        // return att+"/"+abs;
-        return time.toString()+"/"+time.toString();
+        Log.i("flag",String.valueOf(flag));
+        return att+"/"+abs;
     }
 }

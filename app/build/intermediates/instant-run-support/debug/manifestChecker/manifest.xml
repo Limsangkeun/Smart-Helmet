@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.sangkeunlim.smartsafetyhelmetv2.ReadDataService" />
+        <service android:name="com.example.sangkeunlim.smartsafetyhelmetv2.GPSTracker" />
 
         <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Login.RegisterActivity" />
         <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.PersonalSchedule" />
