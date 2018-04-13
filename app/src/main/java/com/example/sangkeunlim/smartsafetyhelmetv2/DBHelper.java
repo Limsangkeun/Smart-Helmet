@@ -3,7 +3,9 @@ package com.example.sangkeunlim.smartsafetyhelmetv2;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -18,7 +20,7 @@ public class DBHelper extends SQLiteOpenHelper {
     //_id INTEGER PRIMARY KEY AUTOINCREMENT,
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE attendanceData (date STRING, startTime STRING, endTime STRING);");
+        db.execSQL("CREATE TABLE user (ID TEXT PRIMARY KEY NOT NULL);");
 
     }
 
@@ -31,15 +33,43 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
     }
 
-    public void insertatt(String date, String startTime) { //sqlite에 출퇴근 기록 작성을 위한 함수
+    public void insertid(String id) { //sqlite에 출퇴근 기록 작성을 위한 함수
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("insert into attendanceData values('" + date + "', '" + startTime + "', '" +"--:--:--" + "');");
+        db.execSQL("insert into user values('" + id + "');");
+        db.close();
+
     }
 
     public void insertabs(String date, String startTime, String endTime) {
         SQLiteDatabase db = getWritableDatabase();
         //db.execSQL("update attendanceData set endTime='"+endTime+"' where date='"+date+"');");
         db.execSQL("insert into attendanceData values('" + date + "', '" + startTime + "', '" + endTime + "');");
+
+        db.close();
+    }
+    public void deleteID(){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("delete from user ");
+        db.close();
+    }
+    public String getID(){
+        String name = "";
+        try{
+
+            SQLiteDatabase ReadDB = getReadableDatabase();
+            Cursor c = ReadDB.rawQuery("select * from user",null);
+            c.moveToFirst();
+            name = c.getString(0);
+            Log.i("id값",name);
+            ReadDB.close();
+        }catch (SQLiteException se){
+
+        }
+        if(name.equals(null))
+        {
+            name = "";
+        }
+        return name;
     }
 
     public void deleteatt(String date)

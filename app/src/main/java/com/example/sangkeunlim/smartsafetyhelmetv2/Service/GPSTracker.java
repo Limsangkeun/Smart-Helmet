@@ -1,4 +1,4 @@
-package com.example.sangkeunlim.smartsafetyhelmetv2;
+package com.example.sangkeunlim.smartsafetyhelmetv2.Service;
 
 import android.app.Service;
 import android.content.Context;

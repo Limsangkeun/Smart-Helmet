@@ -11,7 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RelativeLayout;
 
-
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
 
 /**
@@ -35,8 +34,10 @@ public WebView mWebView;
         RelativeLayout layout = (RelativeLayout)inflater.inflate(R.layout.fragment_first,container,false);
 
         View rootView = inflater.inflate(R.layout.page,container,false);
+
+       // String pw = info.get(1);
         mWebView = (WebView) rootView.findViewById(R.id.webview);
-        mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/bbs.jsp");
+        mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/bbs.jsp?userID=박규");
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 

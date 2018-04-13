@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".GPSTracker"/>
+        <service android:name=".Service.GPSTracker"/>
         <activity android:name=".Login.RegisterActivity" />
         <activity android:name=".Schedule.PersonalSchedule" />
         <activity android:name=".Schedule.OfficialSchedule"/>

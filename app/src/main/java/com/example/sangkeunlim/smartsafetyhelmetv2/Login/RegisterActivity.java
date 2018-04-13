@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
 
 public class RegisterActivity extends Activity {
@@ -17,6 +18,7 @@ public class RegisterActivity extends Activity {
     private RadioGroup rg;
     private RadioButton authorityBtn;
     private String GENDER, AUTHORITY;
+    private DBHelper dbHelper;
 
 
     @Override

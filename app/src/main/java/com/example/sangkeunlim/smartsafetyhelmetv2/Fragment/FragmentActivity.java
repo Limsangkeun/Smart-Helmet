@@ -25,7 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
-import com.example.sangkeunlim.smartsafetyhelmetv2.GPSTracker;
+import com.example.sangkeunlim.smartsafetyhelmetv2.Service.GPSTracker;
 import com.example.sangkeunlim.smartsafetyhelmetv2.Login.CustomTask;
 import com.example.sangkeunlim.smartsafetyhelmetv2.MessageC.Message;
 import com.example.sangkeunlim.smartsafetyhelmetv2.MessageC.MessageListAdapter;
@@ -62,6 +62,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
     // 비동기 UI 처리 핸들러
     private Handler mHandler;
+    private static String s;
 
     // 블루투스 장치 검색 다이얼로그 뷰
     private Dialog mScanDialog;
@@ -156,7 +157,13 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         });
         Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
         startService(intent);
-
+        Intent userIntent = getIntent();
+        s = userIntent.getStringExtra("userID");
+        Log.i("id123123",s);
+        ThirdFragment fragment = new ThirdFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("userID",s);
+        fragment.setArguments(bundle);
     }
 
     View.OnClickListener movePageListener = new View.OnClickListener(){
@@ -193,6 +200,10 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         public int getCount() {
             return 3;
         }
+    }
+
+    public String getID(){
+        return s;
     }
 
     // 블루투스 검색 및 선택을 위한 다이얼로그를 표시

@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.dd.morphingbutton.MorphingButton;
+import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
 import com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity;
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
 
@@ -34,7 +35,9 @@ public class MainActivity extends Activity{
     private ImageView constructorImg;//공사장 인부 아이콘
     private MorphingButton bLogin;
     private MorphingButton bRegist;
-
+    private String id_1;
+    private String pw;
+    private DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +114,10 @@ public class MainActivity extends Activity{
                 final String S_ID = ID.getText().toString();
                 final String S_PW = PW.getText().toString();
 
+                id_1 = S_ID;
+                pw = S_PW;
+
+
                 try {
                     if (ID.getText().toString().replace(" ", "").equals("")) {
                         Toast.makeText(MainActivity.this, "ID를 입력해주세요", Toast.LENGTH_SHORT).show();
@@ -124,6 +131,7 @@ public class MainActivity extends Activity{
 
                         if (result.equals("Login Success")) {
                             Intent AfterLoginIntent = new Intent(MainActivity.this, FragmentActivity.class);
+                            AfterLoginIntent.putExtra("userID",id_1);
                             MainActivity.this.startActivity(AfterLoginIntent);
                         } else if (result.equals("Check PWD")) {
                             Toast.makeText(MainActivity.this, "비밀번호를 확인하세요", Toast.LENGTH_LONG).show();
@@ -146,5 +154,9 @@ public class MainActivity extends Activity{
                 MainActivity.this.startActivity(RegisterIntent);
                 break;
         }
+    }
+
+    public String getInfo(){
+        return id_1;
     }
 }
