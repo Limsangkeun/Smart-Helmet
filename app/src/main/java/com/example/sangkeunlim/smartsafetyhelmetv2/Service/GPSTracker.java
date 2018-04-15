@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity;
 import com.example.sangkeunlim.smartsafetyhelmetv2.Login.CustomTask;
 
 public class GPSTracker extends Service
@@ -125,8 +126,10 @@ public class GPSTracker extends Service
 
     private void sendtoServer(String x,String y)
     {
+        FragmentActivity fa = new FragmentActivity();
+        String userID = fa.getID();
         CustomTask customTask = new CustomTask();
-        customTask.execute("sendGPS","12",x,y);
+        customTask.execute("sendGPS",userID,x,y);
 
     }
 }

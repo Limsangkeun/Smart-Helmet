@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import android.webkit.WebViewClient;
 import android.widget.RelativeLayout;
 
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
+import com.gun0912.tedpermission.util.Dlog;
 
 /**
  * Created by donggun on 2018-04-04.
@@ -45,6 +47,25 @@ public class ThirdFragment extends android.support.v4.app.Fragment {
         webSettings.setJavaScriptEnabled(true);
 
         mWebView.setWebViewClient(new WebViewClient());
+        mWebView.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                //This is the filter
+                if (event.getAction() != KeyEvent.ACTION_DOWN)
+                    return true;
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    if (mWebView.canGoBack()) {
+                        mWebView.goBack();
+                        Dlog.d("canGoBack");
+                    } else {
+                        Dlog.d("canNotGoBack");
+                        ((FragmentActivity) getActivity()).onBackPressed();
+                    }
+                    return true;
+                }
+                return false;
+            }
+        });
         return rootView;
     }
 }

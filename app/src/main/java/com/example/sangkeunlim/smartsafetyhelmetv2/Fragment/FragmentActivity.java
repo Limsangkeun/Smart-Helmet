@@ -24,14 +24,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
-import com.example.sangkeunlim.smartsafetyhelmetv2.Service.GPSTracker;
 import com.example.sangkeunlim.smartsafetyhelmetv2.Login.CustomTask;
-import com.example.sangkeunlim.smartsafetyhelmetv2.MessageC.Message;
 import com.example.sangkeunlim.smartsafetyhelmetv2.MessageC.MessageListAdapter;
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
 import com.example.sangkeunlim.smartsafetyhelmetv2.ScannedDevice;
 import com.example.sangkeunlim.smartsafetyhelmetv2.ScannedDeviceListAdapter;
+import com.example.sangkeunlim.smartsafetyhelmetv2.Service.GPSTracker;
 import com.example.sangkeunlim.smartsafetyhelmetv2.bluetooth.BluetoothService;
 import com.example.sangkeunlim.smartsafetyhelmetv2.bluetooth.BluetoothServiceCallback;
 import com.example.sangkeunlim.smartsafetyhelmetv2.bluetooth.BluetoothServiceFactory;
@@ -54,15 +52,15 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
     private String dataType;
     private String str;
     private static int flag=0;
-    private static final String TAG = FragmentActivity.class.getSimpleName();
+    private static final String TAG = "FragmentActivity";
     // 블루투스 연결 요청 식별자
     private static final int REQUEST_BT_ENABLE = 1;
     //블루투스 장치 검색 유효 시간 (10초)
-    private static final long SCAN_PERIOD = 300000;
+    private static final long SCAN_PERIOD = 100000;
 
     // 비동기 UI 처리 핸들러
     private Handler mHandler;
-    private static String s;
+    private static String userID;
 
     // 블루투스 장치 검색 다이얼로그 뷰
     private Dialog mScanDialog;
@@ -87,8 +85,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
     private MessageListAdapter mChatListAdapter;
 
     private int count = 0;
-    private DBHelper dbHelper;
-    private Button b1;
     private String att ="";
     private String abs ="";
     ViewPager vp;
@@ -99,26 +95,29 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
-        if ( Build.VERSION.SDK_INT >= 23 &&
-                ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
-            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_FINE_LOCATION  },
-                    0 );
-        }
         vp = (ViewPager)findViewById(R.id.vp);
         Button btn_first = (Button)findViewById(R.id.btn_first);
         Button btn_second = (Button)findViewById(R.id.btn_second);
         Button btn_third = (Button)findViewById(R.id.btn_third);
-
-        dbHelper = new DBHelper(getApplicationContext(),"Data.db",null,1);
+        Button bluetoothButton = (findViewById(R.id.B_bluetooth));
         mHandler = new Handler();
 
-        mBluetoothService = BluetoothServiceFactory.getService(BluetoothServiceFactory.BT_LOW_ENERGY);
-        mBluetoothService.setServiceCallback((BluetoothServiceCallback) this); /*이거다른*/
+        if ( Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) //버전에 따라
+        {
+            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_FINE_LOCATION  },
+                    0 );
+        }
+
+
+         /*이거다른*/
 
 
       // mChatListView = (ListView)findViewById(R.id.lvMessageList);
       //  mChatListAdapter = new MessageListAdapter(this);
      //   mChatListView.setAdapter(mChatListAdapter);
+        mBluetoothService = BluetoothServiceFactory.getService(BluetoothServiceFactory.BT_LOW_ENERGY);
+
+        mBluetoothService.setServiceCallback((BluetoothServiceCallback) this);
         vp.setAdapter(new pagerAdapter(getSupportFragmentManager()));
         vp.setCurrentItem(0);
         btn_first.setOnClickListener(movePageListener);
@@ -128,7 +127,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         btn_third.setOnClickListener(movePageListener);
         btn_third.setTag(2);
 
-        Button bluetoothButton = (findViewById(R.id.B_bluetooth));
+
         PermissionListener permissionListener=new PermissionListener() {
             @Override
             public void onPermissionGranted() {
@@ -155,17 +154,15 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
             }
         });
-        Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
-        startService(intent);
-        Intent userIntent = getIntent();
-        s = userIntent.getStringExtra("userID");
-        Log.i("id123123",s);
-        ThirdFragment fragment = new ThirdFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString("userID",s);
-        fragment.setArguments(bundle);
+        Intent intent = new Intent(getApplicationContext(),GPSTracker.class);  //여기서부터 GPS 신호 수집을 위한 서비스
+        startService(intent); // GPS
+        Intent userIntent = getIntent(); //로그인 성공시 메인 Activity에서 보낸 id값을 받는 부분
+        userID = userIntent.getStringExtra("userID");  //로그인 성공시 메인 Activity에서 보낸 id값을 받는 부분
     }
 
+    public String getID(){ //아이디 반환을 위한 함수
+        return userID;
+    }
     View.OnClickListener movePageListener = new View.OnClickListener(){
         @Override
         public void onClick(View v) {
@@ -173,6 +170,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
             vp.setCurrentItem(tag);
         }
     };
+
     private class pagerAdapter extends FragmentStatePagerAdapter{
 
         public pagerAdapter(android.support.v4.app.FragmentManager fm) {
@@ -202,9 +200,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         }
     }
 
-    public String getID(){
-        return s;
-    }
+
 
     // 블루투스 검색 및 선택을 위한 다이얼로그를 표시
     private void showScanDialog() {
@@ -311,9 +307,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
             }
         });
     }
-    private void showMessage(String txt) {
-        Toast.makeText(this, txt, Toast.LENGTH_SHORT).show();
-    }
 
 
     /**
@@ -366,24 +359,27 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
     public void onBackPressed() {
         if (mScanDialog != null) {
             dismissScanDialog();
-        }
-        long tempTime = System.currentTimeMillis();
-        long intervalTime = tempTime - backPressedTime;
+        }else{
+            long tempTime = System.currentTimeMillis();
+            long intervalTime = tempTime - backPressedTime;
 
-        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
-        {
-            Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
-            stopService(intent);
-            finishAffinity();
-            super.onBackPressed();
-        }
-        else
-        {
-            backPressedTime = tempTime;
-            Toast.makeText(getApplicationContext(), "한번 더 뒤로가기 누르면 꺼버린다.", Toast.LENGTH_SHORT).show();
+            if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
+            {
+                Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
+                stopService(intent);
+                finishAffinity();
+                super.onBackPressed();
+            }
+            else
+            {
+                backPressedTime = tempTime;
+                Toast.makeText(getApplicationContext(), "한번 더 뒤로가기 누르면 꺼버린다.", Toast.LENGTH_SHORT).show();
+            }
         }
 
     }
+
+
 
     /**
      * 블루투스 기능이 Off되어 있다면 On 시킨다.
@@ -496,12 +492,10 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
     @Override
     public void onDataRead(String address, byte[] data) {
-        count++;
         CustomTask task2 = new CustomTask();
-        Message msg = new Message();
-        msg.setType(Message.MSG_IN); //메세지 종류
+        //Message msg = new Message();
+        //msg.setType(Message.MSG_IN); //메세지 종류
         str = new String(data).trim(); //공백 제거 (전역변수 str사용)
-
         int idx = str.indexOf(":"); //어떤 데이터인지와 데이터 값을 분류하기 위한
         if (str.contains("CO")) { // CO 데이터라면
             str = str.substring(idx + 1); //
@@ -509,38 +503,24 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         } else if (str.contains("distance")) {
             str = str.substring(idx + 1);
             str = attendanceList(str);
-            if(str.equals("/"))
-            {
-                dataType="1";
-            }else {
-                dataType = "1";
-            }
+            dataType = "1";
         }
-        String s="";
-        if(str.equals("점심시간"))
+        if(str.equals("점심시간") || str.equals("/") || str.equals(""))
         {
-        }else if(str.equals("/")){
-        }else if(str.equals("")){
+            Log.d(TAG,"출퇴근 시간 체크 시간이 아닙니다.");
         }else
         {
-            task2.execute("sendData",dataType,"12",str);
-            //task2.cancel(true);
+            task2.execute("sendData",dataType,userID,str);
             Log.i("데이터 전송","완료");
-        }
-
-        if(count >100)
-        {
-            count=1;
         }
     }
 
 
     private String attendanceList(String str) //출근여부 판단/처리 함수/**/
     {
-
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd"); //H는 시간 형식이 24
         Date currentTime = new Date();
-        String day = sdf.format(currentTime);
+        //String day = sdf.format(currentTime);
         Time time = new Time(System.currentTimeMillis());
         Time time2 = new Time(System.currentTimeMillis());
         Time time3 = new Time(System.currentTimeMillis());
@@ -554,14 +534,12 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         time4.setMinutes(00);
         time5.setHours(18);
         time5.setMinutes(00);
-        if(time.after(time2) && time.before(time3)){ //&& time.before(time3)){    // 시간을 비교한다.
-            if(flag == 0 && Integer.valueOf(str) <15)
+        if(time.after(time2) && time.before(time3)){ //9시 ~ 12시 사이에
+            if(flag == 0 && Integer.valueOf(str) <15) //플래그가 0이고 초음파 센서 값이 15이하 즉 헬맷 착용상태라면
             {
-                att = time.toString();
+                att = time.toString(); //att에 출근 시간을 입력한다.
                 flag=1; //flag == 1이면 출근
 
-            }else{
-                return "";
             }
         }else if(time.after(time3) && time.before(time4))
         {
@@ -573,13 +551,14 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
                 abs = time.toString();
                 Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
                 stopService(intent);
-            }else{
-                return "";
+                return att+"/"+abs;
             }
-
-
         }
         Log.i("flag",String.valueOf(flag));
-        return att+"/"+abs;
+        return "";
+    }
+
+    public BluetoothService getBTService(){
+        return mBluetoothService;
     }
 }

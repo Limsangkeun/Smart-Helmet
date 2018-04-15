@@ -79,10 +79,10 @@ public class ScannedDeviceListAdapter extends BaseAdapter {
             viewHolder.ivIcon.setImageResource(R.drawable.device_waiting);
             viewHolder.tvState.setText("연결중");
         } else if (item.getState() == ScannedDevice.DEVICE_CONNECTED) {
-            viewHolder.ivIcon.setImageResource(R.drawable.device_connected);
+            viewHolder.ivIcon.setImageResource(R.drawable.connect);
             viewHolder.tvState.setText("연결됨");
         } else if ( item.getState() == ScannedDevice.DEVICE_DISCONNECT) {
-            viewHolder.ivIcon.setImageResource(R.drawable.device_connected);
+            viewHolder.ivIcon.setImageResource(R.drawable.connect);
             viewHolder.tvState.setText("해제중");
         } else {
             viewHolder.ivIcon.setImageResource(R.drawable.device_waiting);
