@@ -497,13 +497,25 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         //msg.setType(Message.MSG_IN); //메세지 종류
         str = new String(data).trim(); //공백 제거 (전역변수 str사용)
         int idx = str.indexOf(":"); //어떤 데이터인지와 데이터 값을 분류하기 위한
-        if (str.contains("CO")) { // CO 데이터라면
-            str = str.substring(idx + 1); //
-            dataType = "3";
-        } else if (str.contains("distance")) {
+        if (str.contains("distance")) {
             str = str.substring(idx + 1);
             str = attendanceList(str);
             dataType = "1";
+        } else if (str.contains("gradient")){
+            str = str.substring(idx + 1);
+            if(str.equals("기울어짐")){
+                str = "1";
+            }else{
+                str = "0";
+            }
+            dataType = "2";
+        } else if (str.contains("CO")) { // CO 데이터라면
+            str = str.substring(idx + 1); //
+            dataType = "3";
+        } else if (str.contains("vibrate"))
+        {
+            str = str.substring(idx + 1);
+            dataType = "4";
         }
         if(str.equals("점심시간") || str.equals("/") || str.equals(""))
         {
