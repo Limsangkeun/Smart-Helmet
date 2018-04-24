@@ -44,23 +44,23 @@ public class FirstFragment extends android.support.v4.app.Fragment {
         webSettings.setJavaScriptEnabled(true);
         mWebView.setWebViewClient(new WebViewClient());
         mWebView.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                //This is the filter
-                if (event.getAction() != KeyEvent.ACTION_DOWN)
-                    return true;
-                if (keyCode == KeyEvent.KEYCODE_BACK) {
-                    if (mWebView.canGoBack()) {
-                        mWebView.goBack();
-                        Dlog.d("canGoBack");
-                    } else {
-                        Dlog.d("canNotGoBack");
-                        ((FragmentActivity) getActivity()).onBackPressed();
+                @Override
+                public boolean onKey(View v, int keyCode, KeyEvent event) {
+                    //This is the filter
+                    if (event.getAction() != KeyEvent.ACTION_DOWN)
+                        return true;
+                    if (keyCode == KeyEvent.KEYCODE_BACK) {
+                        if (mWebView.canGoBack()) {
+                            mWebView.goBack();
+                            Dlog.d("canGoBack");
+                        } else {
+                            Dlog.d("canNotGoBack");
+                            ((FragmentActivity) getActivity()).onBackPressed();
+                        }
+                        return true;
                     }
-                    return true;
+                    return false;
                 }
-                return false;
-            }
         });
         return rootView;
 

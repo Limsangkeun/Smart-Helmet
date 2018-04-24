@@ -199,14 +199,15 @@
                     android:hint="공사장 1층" />
 
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/manager"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@+id/BELONGS"
                     android:layout_below="@+id/BELONGS"
                     android:text="그렇다 나는 관리자이다"
-                    android:onClick="onRadioClicked"/>
+                    android:onClick="onAuthorityClicked"
+                    />
 
             </RelativeLayout>
 

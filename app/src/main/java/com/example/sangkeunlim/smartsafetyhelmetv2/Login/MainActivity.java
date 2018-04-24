@@ -16,8 +16,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.dd.morphingbutton.MorphingButton;
-import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
 import com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity;
+import com.example.sangkeunlim.smartsafetyhelmetv2.FragmentM.MFragmentActivity;
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
 
 
@@ -36,8 +36,6 @@ public class MainActivity extends Activity{
     private MorphingButton bLogin;
     private MorphingButton bRegist;
     private String id_1;
-    private String pw;
-    private DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,20 +107,14 @@ public class MainActivity extends Activity{
         switch (v.getId()) {
             //로그인 클릭 시
             case R.id.B_LOGIN:
-                bLogin.morph(circle_selected);
-                bRegist.morph(circle);
                 final String S_ID = ID.getText().toString();
                 final String S_PW = PW.getText().toString();
-
                 id_1 = S_ID;
-                pw = S_PW;
-
-
                 try {
                     if (ID.getText().toString().replace(" ", "").equals("")) {
                         Toast.makeText(MainActivity.this, "ID를 입력해주세요", Toast.LENGTH_SHORT).show();
                     } else if (PW.getText().toString().replace(" ", "").equals("")) {
-                        Toast.makeText(MainActivity.this, "PW를 입력해주세요", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "PW를 입력해주세요", Toast.LENGTH_SHORT).show();
                     } else {
                         String result;
                         String Login = "LoginApp";
@@ -130,20 +122,27 @@ public class MainActivity extends Activity{
                         result = task.execute(Login, S_ID, S_PW).get();
 
                         if (result.equals("Login Success")) {
+                            bLogin.morph(circle_selected);
+                            bRegist.morph(circle);
                             Intent AfterLoginIntent = new Intent(MainActivity.this, FragmentActivity.class);
                             AfterLoginIntent.putExtra("userID",id_1);
                             MainActivity.this.startActivity(AfterLoginIntent);
-                        } else if (result.equals("Check PWD")) {
-                            Toast.makeText(MainActivity.this, "비밀번호를 확인하세요", Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(MainActivity.this, "존재하지 않는 ID입니다.", Toast.LENGTH_LONG).show();
+                        }else if(result.equals("Login Success Manager")) {
+                            bLogin.morph(circle_selected);
+                            bRegist.morph(circle);
+                            Intent AfterLoginIntent =  new Intent(MainActivity.this, MFragmentActivity.class);
+                            AfterLoginIntent.putExtra("userID",id_1);
+                            MainActivity.this.startActivity(AfterLoginIntent);
                         }
-
+                        else if (result.equals("Check PWD")) {
+                            Toast.makeText(MainActivity.this, "비밀번호를 확인하세요", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "존재하지 않는 ID입니다.", Toast.LENGTH_SHORT).show();
+                        }
                     }
-
                 } catch (Exception e) {
-                }
 
+                }
                 break;
 
             //회원가입 클릭 시
@@ -154,9 +153,5 @@ public class MainActivity extends Activity{
                 MainActivity.this.startActivity(RegisterIntent);
                 break;
         }
-    }
-
-    public String getInfo(){
-        return id_1;
     }
 }

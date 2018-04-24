@@ -37,9 +37,7 @@ import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
 import java.sql.Time;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
@@ -156,8 +154,11 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         });
         Intent intent = new Intent(getApplicationContext(),GPSTracker.class);  //여기서부터 GPS 신호 수집을 위한 서비스
         startService(intent); // GPS
+
         Intent userIntent = getIntent(); //로그인 성공시 메인 Activity에서 보낸 id값을 받는 부분
         userID = userIntent.getStringExtra("userID");  //로그인 성공시 메인 Activity에서 보낸 id값을 받는 부분
+
+       // startService(new Intent(this,CheckSignal.class));
     }
 
     public String getID(){ //아이디 반환을 위한 함수
@@ -352,6 +353,8 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         }
         Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
         stopService(intent);
+     //   Intent intent2 = new Intent(getApplicationContext(),CheckSignal.class);
+       // stopService(intent2);
         super.onDestroy();
     }
     //뒤로가기 누르면 실행 스캔 중지
@@ -492,6 +495,10 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
     @Override
     public void onDataRead(String address, byte[] data) {
+        boolean fallFlagG = false;
+        boolean fallFlagV = false;
+        boolean fallFlagT = false;
+
         CustomTask task2 = new CustomTask();
         //Message msg = new Message();
         //msg.setType(Message.MSG_IN); //메세지 종류
@@ -530,8 +537,8 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
     private String attendanceList(String str) //출근여부 판단/처리 함수/**/
     {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd"); //H는 시간 형식이 24
-        Date currentTime = new Date();
+       // SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd"); //H는 시간 형식이 24
+        //Date currentTime = new Date();
         //String day = sdf.format(currentTime);
         Time time = new Time(System.currentTimeMillis());
         Time time2 = new Time(System.currentTimeMillis());
@@ -552,17 +559,27 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
                 att = time.toString(); //att에 출근 시간을 입력한다.
                 flag=1; //flag == 1이면 출근
 
+                return att+"/";
+
             }
         }else if(time.after(time3) && time.before(time4))
         {
             return "점심시간";
-        }else if(time.after(time4) && Integer.valueOf(str) >15 )
+        }else if(time.after(time4))
         {
-            if(flag == 1){
+            if(flag == 0 && Integer.valueOf(str) <15) //플래그가 0이고 초음파 센서 값이 15이하 즉 헬맷 착용상태라면
+            {
+                att = time.toString(); //att에 출근 시간을 입력한다.
+                flag=1; //flag == 1이면 출근
+
+            }
+            if(flag == 1 && Integer.valueOf(str) >15){
                 flag=0;
                 abs = time.toString();
-                Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
-                stopService(intent);
+              //  Intent intent = new Intent(getApplicationContext(),GPSTracker.class);
+                //stopService(intent);
+              //  Intent intent2 = new Intent(getApplicationContext(),CheckSignal.class);
+                //stopService(intent2);
                 return att+"/"+abs;
             }
         }
@@ -570,7 +587,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         return "";
     }
 
-    public BluetoothService getBTService(){
-        return mBluetoothService;
+    private void judgeFalling(){
+
     }
 }

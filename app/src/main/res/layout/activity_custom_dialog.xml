@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        style="@style/lightbox_dialog"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="@color/grey"
+            android:shadowColor="#FFFFFFE0"
+            android:hint="일정을 입력하시오"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="일정 시간을 입력하시오"
+            android:textColor="#FFFFFFE0"
+            android:textSize="10sp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:timePickerMode="spinner"
+            >
+
+        </TimePicker>
+    </LinearLayout>
+</LinearLayout>

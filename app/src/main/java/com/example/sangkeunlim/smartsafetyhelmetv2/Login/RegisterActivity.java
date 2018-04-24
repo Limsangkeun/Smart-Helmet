@@ -5,20 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.example.sangkeunlim.smartsafetyhelmetv2.DBHelper;
 import com.example.sangkeunlim.smartsafetyhelmetv2.R;
 
 public class RegisterActivity extends Activity {
     private EditText ID, PW, RPW,NAME,  EMAIL, BELONGS;
     private RadioGroup rg;
-    private RadioButton authorityBtn;
+    private CheckBox authorityBtn;
     private String GENDER, AUTHORITY;
-    private DBHelper dbHelper;
 
 
     @Override
@@ -39,7 +37,7 @@ public class RegisterActivity extends Activity {
         BELONGS = (EditText) findViewById(R.id.BELONGS);
         Button Back = (Button) findViewById(R.id.B_BACK);
         Button regist = (Button)findViewById(R.id.B_DONE);
-        authorityBtn = (RadioButton)findViewById(R.id.manager);
+        authorityBtn = (CheckBox)findViewById(R.id.manager);
 
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,12 +51,12 @@ public class RegisterActivity extends Activity {
             @Override
             public void onClick(View v) {
                 try {
-                     final String S_ID = ID.getText().toString();
-                     final String S_PW = PW.getText().toString();
-                     final String S_RPW = RPW.getText().toString();
-                     final String S_NAME = NAME.getText().toString();
-                     final String S_EMAIL = EMAIL.getText().toString();
-                     final String S_BELONGS = BELONGS.getText().toString();
+                    final String S_ID = ID.getText().toString();
+                    final String S_PW = PW.getText().toString();
+                    final String S_RPW = RPW.getText().toString();
+                    final String S_NAME = NAME.getText().toString();
+                    final String S_EMAIL = EMAIL.getText().toString();
+                    final String S_BELONGS = BELONGS.getText().toString();
 
                     String S_Regist = "Regist";
 
@@ -118,8 +116,7 @@ public class RegisterActivity extends Activity {
         });
     }
 
-    public void onRadioClicked(View view) {
-
+    public void onAuthorityClicked(View view) {
 
         if(authorityBtn.isChecked()) {
             AUTHORITY = "관리자";
@@ -128,4 +125,5 @@ public class RegisterActivity extends Activity {
         }
         Toast.makeText(RegisterActivity.this, AUTHORITY, Toast.LENGTH_SHORT).show();
     }
+
 }

@@ -56,6 +56,10 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragmentm_third.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\fragmentm_third.xml"
+    },
+    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -66,6 +70,10 @@
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragmentm_second.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\fragmentm_second.xml"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -304,6 +312,10 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragmentm_forth.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\fragmentm_forth.xml"
+    },
+    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -478,6 +490,10 @@
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mcv_action_next.png.flat",
+        "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\material-calendarview-1.4.3.aar\\69a61a2c2f028e498256f5e2bc01dddd\\res\\drawable-xxxhdpi-v4\\mcv_action_next.png"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
@@ -672,6 +688,10 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mcv_action_previous.png.flat",
+        "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\material-calendarview-1.4.3.aar\\69a61a2c2f028e498256f5e2bc01dddd\\res\\drawable-xxxhdpi-v4\\mcv_action_previous.png"
+    },
+    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -714,6 +734,10 @@
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\anim_loading.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\anim\\loading.xml"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -804,6 +828,10 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\color_mcv_text_date_light.xml.flat",
+        "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\material-calendarview-1.4.3.aar\\69a61a2c2f028e498256f5e2bc01dddd\\res\\color\\mcv_text_date_light.xml"
+    },
+    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
@@ -850,6 +878,10 @@
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_custom_dialog.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\activity_custom_dialog.xml"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1064,8 +1096,16 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_fragmentm.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\activity_fragmentm.xml"
+    },
+    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragmentm_first.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\fragmentm_first.xml"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
@@ -1116,6 +1156,10 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_loading.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\activity_loading.xml"
+    },
+    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\b5ac8a0178aa37378b6fb3565a81d339\\res\\drawable\\notification_tile_bg.xml"
     },
@@ -1148,12 +1192,12 @@
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
@@ -1262,6 +1306,10 @@
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\217bc65ebf99e6961a868215e29c6e4f\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\color_mcv_text_date_dark.xml.flat",
+        "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\material-calendarview-1.4.3.aar\\69a61a2c2f028e498256f5e2bc01dddd\\res\\color\\mcv_text_date_dark.xml"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_background_card.9.png.flat",
@@ -1550,6 +1598,10 @@
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
         "source": "C:\\Users\\SangKeun LIM\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\22aa1f498da7671794e02cde454f6c32\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_connect_db.xml.flat",
+        "source": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\src\\main\\res\\layout\\activity_connect_db.xml"
     },
     {
         "merged": "D:\\AndroidProject\\SmartSafetyHelmetV2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_plus.png.flat",

@@ -1,37 +1,39 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:2:1-13:12
+MERGED from [com.prolificinteractive:material-calendarview:1.4.3] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\material-calendarview-1.4.3.aar\69a61a2c2f028e498256f5e2bc01dddd\AndroidManifest.xml:2:1-14:12
 MERGED from [:morphing] D:\AndroidProject\SmartSafetyHelmetV2\morphing\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2002c342036345a6d845edbee8d6f065\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\daa96d7338ccea15c1726bccaaa6108a\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f973e7a9d8398e7c6a478fd3701dac8e\AndroidManifest.xml:17:1-30:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:3:5-58
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:2:11-69
@@ -59,126 +61,150 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
 		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.INTERACT_ACROSS_USERS_FULL
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:11:5-120
+	android:protectionLevel
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:11:83-118
+	android:name
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:11:22-82
 uses-sdk
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:11:5-13:37
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:11:5-13:37
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:12:5-14:37
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:12:5-14:37
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.prolificinteractive:material-calendarview:1.4.3] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\material-calendarview-1.4.3.aar\69a61a2c2f028e498256f5e2bc01dddd\AndroidManifest.xml:8:5-10:41
+MERGED from [com.prolificinteractive:material-calendarview:1.4.3] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\material-calendarview-1.4.3.aar\69a61a2c2f028e498256f5e2bc01dddd\AndroidManifest.xml:8:5-10:41
 MERGED from [:morphing] D:\AndroidProject\SmartSafetyHelmetV2\morphing\build\intermediates\manifests\full\debug\AndroidManifest.xml:8:5-10:41
 MERGED from [:morphing] D:\AndroidProject\SmartSafetyHelmetV2\morphing\build\intermediates\manifests\full\debug\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2002c342036345a6d845edbee8d6f065\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2002c342036345a6d845edbee8d6f065\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\daa96d7338ccea15c1726bccaaa6108a\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\daa96d7338ccea15c1726bccaaa6108a\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:21:5-23:58
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f973e7a9d8398e7c6a478fd3701dac8e\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f973e7a9d8398e7c6a478fd3701dac8e\AndroidManifest.xml:20:5-22:41
-INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:11:5-13:37
+INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:12:5-14:37
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:23:9-75
 	android:maxSdkVersion
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:13:9-35
 	android:targetSdkVersion
 		ADDED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:7:9-38
 	android:minSdkVersion
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:13:9-34
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:14:9-34
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:14:5-35:19
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:15:5-39:19
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:9:5-13:19
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:9:5-13:19
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:11:5-20
 MERGED from [com.github.katoro:typekit:1.0.1] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\ca509d2f3a31dd59eaf0382e8c1ecd3a\AndroidManifest.xml:11:5-20
+MERGED from [com.prolificinteractive:material-calendarview:1.4.3] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\material-calendarview-1.4.3.aar\69a61a2c2f028e498256f5e2bc01dddd\AndroidManifest.xml:12:5-20
+MERGED from [com.prolificinteractive:material-calendarview:1.4.3] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\material-calendarview-1.4.3.aar\69a61a2c2f028e498256f5e2bc01dddd\AndroidManifest.xml:12:5-20
 MERGED from [:morphing] D:\AndroidProject\SmartSafetyHelmetV2\morphing\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-20
 MERGED from [:morphing] D:\AndroidProject\SmartSafetyHelmetV2\morphing\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-20
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2002c342036345a6d845edbee8d6f065\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2002c342036345a6d845edbee8d6f065\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:25:5-29:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f973e7a9d8398e7c6a478fd3701dac8e\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f973e7a9d8398e7c6a478fd3701dac8e\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:20:9-43
 	android:icon
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:18:9-38
 	android:allowBackup
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:20:9-40
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:22:9-40
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:21:9-43
-activity#com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:22:9-28:20
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:16:9-43
+activity#com.example.sangkeunlim.smartsafetyhelmetv2.Login.Loading
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:23:9-29:20
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:22:19-53
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:23:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:27:27-74
 service#com.example.sangkeunlim.smartsafetyhelmetv2.Service.GPSTracker
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:30:9-54
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:30:18-52
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:18-52
+service#com.example.sangkeunlim.smartsafetyhelmetv2.Service.CheckSignal
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:9-55
+	android:name
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:18-53
+activity#com.example.sangkeunlim.smartsafetyhelmetv2.Login.MainActivity
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:33:9-55
+	android:name
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:33:19-53
 activity#com.example.sangkeunlim.smartsafetyhelmetv2.Login.RegisterActivity
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:9-60
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:34:9-60
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:31:19-57
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:34:19-57
 activity#com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.PersonalSchedule
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:9-63
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:35:9-63
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:32:19-60
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:35:19-60
 activity#com.example.sangkeunlim.smartsafetyhelmetv2.Schedule.OfficialSchedule
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:33:9-62
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:36:9-62
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:33:19-60
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:36:19-60
 activity#com.example.sangkeunlim.smartsafetyhelmetv2.Fragment.FragmentActivity
-ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:34:9-62
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:37:9-62
 	android:name
-		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:34:19-60
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:37:19-60
+activity#com.example.sangkeunlim.smartsafetyhelmetv2.FragmentM.MFragmentActivity
+ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:38:9-64
+	android:name
+		ADDED from D:\AndroidProject\SmartSafetyHelmetV2\app\src\main\AndroidManifest.xml:38:19-62
 activity#com.gun0912.tedpermission.TedPermissionActivity
 ADDED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:10:9-12:56
 	android:theme
@@ -187,20 +213,20 @@ ADDED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM
 		ADDED from [com.github.ParkSangGwon:TedPermission:v1.0.11] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\TedPermission-v1.0.11.aar\54cdeb2524f380a10d2010f4fc6694fb\AndroidManifest.xml:11:13-75
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\22aa1f498da7671794e02cde454f6c32\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7a04ab8a20a7614d05282bb77e6248bc\AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3ef90ffe27a7f6727e18ecf114acf9bd\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8eab196b4c9ce399c72bb99de8c32e2\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\59a886749a94b7b74acd7de0fe6c234a\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a38a377ca3efd4c0a6056882b1563846\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\217bc65ebf99e6961a868215e29c6e4f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9f5939a9de57f25383c75a1851b7beb\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SangKeun LIM\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\b5ac8a0178aa37378b6fb3565a81d339\AndroidManifest.xml:26:9-28:38
 	android:value
