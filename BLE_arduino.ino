@@ -1,3 +1,4 @@
+#define E 330 // 미 
 // 블루투스 통신을 위한 SoftwareSerial 라이브러리
 #include <SoftwareSerial.h>
 #include<Wire.h>
@@ -8,12 +9,16 @@ MPU6050 mpu;
 
 SoftwareSerial BTSerial(4, 5);
 
-
 boolean ledState = false;
 boolean freefallDetected = false;
 int freefallBlinkCount = 0;
 int i = 0;
 int j = 0;
+int speakerPin = 7;
+/// byte song_table [] = {30, 30, 30, 40, 50, 60, 70, 80, 90, 100,110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 250, 240, 230, 220, 210, 200, 190, 180, 170, 160, 150, 140, 130, 120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 30, 30};
+int MAX = 50;
+int count1 = 0; 
+
 
 // 초음파센서의 송신부를 8번핀으로 설정합니다.
 int trig = 8;
@@ -69,6 +74,7 @@ void setup()
   
   checkSettings();
   pinMode(LEDpin_4, OUTPUT);
+  pinMode(speakerPin,OUTPUT);
   digitalWrite(4, LOW);
   
   attachInterrupt(0, doInt, RISING);
@@ -165,8 +171,6 @@ return ppm;
 void loop()
 {
 
-  
-
     
     // 블루투스로 부터 수신된 데이터를 읽는다.
 //    if (BTSerial.available()) {
@@ -239,7 +243,12 @@ GasPin2 = analogRead(GasPin);
         if(sum>1250) 
        { 
           digitalWrite(LEDpin,HIGH); 
- 
+          
+          BTSerial.println("coDanger");
+          
+          
+          Serial.println("coDanger");
+          tone (speakerPin, 350, 5000);
         } 
         else{ 
         digitalWrite(LEDpin,LOW); 
@@ -290,15 +299,20 @@ GasPin2 = analogRead(GasPin);
   delay(250);
 
    if (freefallDetected)
-  {
-
+  {  
     for(int i = 0 ; i < 10 ; i++){
     digitalWrite(LEDpin_4, HIGH);   // turn the LED on (HIGH is the voltage level)
+  tone (speakerPin, 250, 150);
    delay(150);                       // wait for a second
    digitalWrite(LEDpin_4, LOW);    // turn the LED off by making the voltage LOW
+   
    delay(150);                       // wait for a second
 
     }
+    BTSerial.println("fallDanger");
+
+    
+    Serial.println("fallDanger");
    freefallDetected = false;
      
     }
