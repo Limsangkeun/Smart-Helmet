@@ -33,14 +33,14 @@ public class ThirdFragmentM extends android.support.v4.app.Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        RelativeLayout layout = (RelativeLayout) inflater.inflate(R.layout.fragment_first, container, false);
+        RelativeLayout layout = (RelativeLayout) inflater.inflate(R.layout.fragmentm_first, container, false);
         Activity root = getActivity();
         View rootView = inflater.inflate(R.layout.page, container, false);
         MFragmentActivity fa = new MFragmentActivity();
         Bundle bundle = getArguments();
         String id = fa.getID();
         mWebView = (WebView) rootView.findViewById(R.id.webview);
-        mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/Attend.jsp?userID=" + id);
+        mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/manageAttendance.jsp?userID=" + id);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 

@@ -135,7 +135,7 @@ public class GPSTracker extends Service
             userID = mfa.getID();
         }
         CustomTask customTask = new CustomTask();
-        customTask.execute("sendGPS",userID,x,y);
+        customTask.execute("sendGPS","7",userID,x,y);
 
     }
 }

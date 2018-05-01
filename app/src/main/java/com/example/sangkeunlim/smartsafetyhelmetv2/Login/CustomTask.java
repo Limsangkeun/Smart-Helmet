@@ -35,16 +35,16 @@ public class CustomTask extends AsyncTask<String, Void, String> {
             {
                 url = new URL("https://wbkim11.cafe24.com/SmartHelmet/Sensor.jsp");
                 sendMsg = "userID="+strings[2]+"&kind="+strings[1]+"&data="+strings[3];
-                Log.i("출근부",sendMsg);
+                Log.i("중수형",sendMsg);
             }else if(strings[0].equals("sendGPS"))
             {
                 url = new URL("https://wbkim11.cafe24.com/SmartHelmet/Sensor.jsp");
-                sendMsg = "userID="+strings[1]+"&dataX="+strings[2]+"&dataY="+strings[3];
+                sendMsg = "userID="+strings[2]+"&kind="+strings[1]+"&dataX="+strings[3]+"&dataY="+strings[4];
                 Log.i("gps",sendMsg);
-            }else if(strings[0].equals("CheckSignal")){
-                url = new URL("http://192.168.219.129:8080/SignUp/CheckSignal.jsp");
-                sendMsg = "userID="+strings[1];
-                Log.i("CheckSignal",sendMsg);
+            }else if(strings[0].equals("call")) {
+                url = new URL("https://wbkim11.cafe24.com/SmartHelmet/sendMessage.jsp");
+                sendMsg = "message=" + strings[1];
+                Log.i("calling", sendMsg);
             }
             //URL 객체 생성
             HttpURLConnection conn = (HttpURLConnection) url.openConnection(); //http 통신 객체 생성

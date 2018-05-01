@@ -39,7 +39,7 @@ public class FirstFragment extends android.support.v4.app.Fragment {
         View rootView = inflater.inflate(R.layout.page, container, false);
         String userID = fa.getID();
         mWebView = (WebView) rootView.findViewById(R.id.webview);
-        mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/bbs.jsp?userID=" + userID);
+        mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/m_bbs.jsp?userID=" + userID);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mWebView.setWebViewClient(new WebViewClient());

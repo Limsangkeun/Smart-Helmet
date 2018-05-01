@@ -2,16 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sangkeunlim.smartsafetyhelmetv2">
 
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="8" />
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
-    <uses-sdk
-        android:maxSdkVersion="17"
-        android:minSdkVersion="8" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name=".Font.CustomFontApp"
         android:allowBackup="true"
@@ -28,14 +36,33 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".Service.GPSTracker"/>
-        <service android:name=".Service.CheckSignal"/>
-        <activity android:name=".Login.MainActivity"/>
+        <service android:name=".Service.GPSTracker" />
+        <service android:name=".Service.CheckSignal" />
+        <service
+            android:name=".firebase.FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebase.FirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Login.MainActivity" />
         <activity android:name=".Login.RegisterActivity" />
         <activity android:name=".Schedule.PersonalSchedule" />
-        <activity android:name=".Schedule.OfficialSchedule"/>
-        <activity android:name=".Fragment.FragmentActivity"/>
-        <activity android:name=".FragmentM.MFragmentActivity"/>
+        <activity android:name=".Schedule.OfficialSchedule" />
+        <activity android:name=".Fragment.FragmentActivity" />
+        <activity android:name=".FragmentM.MFragmentActivity" />
+        <activity android:name=".FragmentM.BoardFragmentM"></activity>
+        <activity android:name="com.example.sangkeunlim.smartsafetyhelmetv2.MyAlert" android:theme="@android:style/Theme.Dialog"> </activity>
     </application>
 
 </manifest>

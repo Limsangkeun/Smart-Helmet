@@ -14,35 +14,35 @@
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="게시판" />
+            android:text="상황판" />
 
         <Button
             android:id="@+id/btn_second"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="일정 관리" />
+            android:text="게시판" />
 
         <Button
             android:id="@+id/btn_third"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="출근부" />
+            android:text="일정 관리" />
 
         <Button
             android:id="@+id/btn_forth"
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:text="인부 검색"
+            android:text="출근부"
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/B_bluetooth"
+            android:id="@+id/btn_fifth"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="상황판" />
+            android:text="인부 검색" />
     </LinearLayout>
 
     <android.support.v4.view.ViewPager

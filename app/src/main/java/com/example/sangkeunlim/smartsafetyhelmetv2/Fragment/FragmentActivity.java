@@ -2,13 +2,17 @@ package com.example.sangkeunlim.smartsafetyhelmetv2.Fragment;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -16,6 +20,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -33,12 +38,15 @@ import com.example.sangkeunlim.smartsafetyhelmetv2.Service.GPSTracker;
 import com.example.sangkeunlim.smartsafetyhelmetv2.bluetooth.BluetoothService;
 import com.example.sangkeunlim.smartsafetyhelmetv2.bluetooth.BluetoothServiceCallback;
 import com.example.sangkeunlim.smartsafetyhelmetv2.bluetooth.BluetoothServiceFactory;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 
 /**
@@ -88,9 +96,11 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
     ViewPager vp;
     private final long FINISH_INTERVAL_TIME = 200;
     private long   backPressedTime = 0;
+    static Vibrator vibrator = null;
     @SuppressLint("HandlerLeak")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
         vp = (ViewPager)findViewById(R.id.vp);
@@ -99,22 +109,16 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         Button btn_third = (Button)findViewById(R.id.btn_third);
         Button bluetoothButton = (findViewById(R.id.B_bluetooth));
         mHandler = new Handler();
-
         if ( Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) //버전에 따라
         {
             ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_FINE_LOCATION  },
                     0 );
         }
-
-
          /*이거다른*/
-
-
       // mChatListView = (ListView)findViewById(R.id.lvMessageList);
       //  mChatListAdapter = new MessageListAdapter(this);
      //   mChatListView.setAdapter(mChatListAdapter);
         mBluetoothService = BluetoothServiceFactory.getService(BluetoothServiceFactory.BT_LOW_ENERGY);
-
         mBluetoothService.setServiceCallback((BluetoothServiceCallback) this);
         vp.setAdapter(new pagerAdapter(getSupportFragmentManager()));
         vp.setCurrentItem(0);
@@ -144,7 +148,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
                 .setDeniedMessage("거부하면 어플리케이션을 사용하지 못합니다")
                 .setPermissions(Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION)
                 .check();
-
         bluetoothButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -159,6 +162,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         userID = userIntent.getStringExtra("userID");  //로그인 성공시 메인 Activity에서 보낸 id값을 받는 부분
 
        // startService(new Intent(this,CheckSignal.class));
+        SendToken();
     }
 
     public String getID(){ //아이디 반환을 위한 함수
@@ -337,13 +341,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         super.onResume();
     }
     //다른 액티비티 실행시
-    @Override
-    protected void onPause() {
-        if (mBluetoothService != null) {
-            mBluetoothService.stopScan();
-        }
-        super.onPause();
-    }
+
 
     //앱 종료시
     @Override
@@ -523,6 +521,24 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         {
             str = str.substring(idx + 1);
             dataType = "4";
+        } else if (str.contains("coDanger")){
+            DangerSignal_CO();
+            try {
+                String s = task2.execute("call",userID+"/CO").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+        }else if (str.contains("fallDanger")){
+            DangerSignal_CO();
+            try {
+                String s = task2.execute("call",userID+"/fall").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
         if(str.equals("점심시간") || str.equals("/") || str.equals(""))
         {
@@ -587,7 +603,42 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         return "";
     }
 
-    private void judgeFalling(){
+    private void DangerSignal_CO(){
+        vibrator.vibrate(new long[]{100,1000,100,500,100,500,100,1000}, 0); //무한 반복
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(FragmentActivity.this);
+        builder.setCancelable(false);
+        LayoutInflater factory = LayoutInflater.from(FragmentActivity.this);
+        final View view = factory.inflate(R.layout.alert_layout, null);
+        TextView textView = (TextView)view.findViewById(R.id.alertText);
+        textView.setText("CO농도 높음 주의 요망!");
+        builder.setView(view);
+        builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                vibrator.cancel();//닫기
+            }
+        });
+
+        builder.show();
+    }
+
+    private void SendToken(){
+
+        FirebaseMessaging.getInstance().subscribeToTopic("news");
+        String tokens = FirebaseInstanceId.getInstance().getToken();
+        try {
+            CustomTask task = new CustomTask();
+            /*String tokenss = autoLogin.getString("tokens", null);
+            SharedPreferences.Editor editor = autoLogin.edit();
+            editor.putString("tokens", tokens);
+            editor.apply();*/
+            String result = task.execute("sendData","8",userID,tokens).get();
+            Log.d("resultssssss", result + ":");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
