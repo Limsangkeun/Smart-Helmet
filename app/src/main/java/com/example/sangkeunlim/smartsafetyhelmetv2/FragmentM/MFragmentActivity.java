@@ -108,9 +108,7 @@ public class MFragmentActivity extends AppCompatActivity{
         init_tables();
         Intent intent = new Intent(getApplicationContext(),GPSTracker.class);  //여기서부터 GPS 신호 수집을 위한 서비스
         startService(intent); // GPS
-       // DangerSignal_CO();
         SendToken();
-
     }
     private void init_tables() {
         dateSQLite = new DateSQLite(getApplicationContext()) ;
@@ -158,7 +156,7 @@ public class MFragmentActivity extends AppCompatActivity{
 
         @Override
         public int getCount() {
-            return 4;
+            return 5;
         }
     }
     public String getID(){ //아이디 반환을 위한 함수
@@ -203,6 +201,7 @@ public class MFragmentActivity extends AppCompatActivity{
                 Toast.makeText(getApplicationContext(), "한번 더 뒤로가기 누르면 꺼버린다.", Toast.LENGTH_SHORT).show();
             }
         }
+
     private void SendToken(){
 
         FirebaseMessaging.getInstance().subscribeToTopic("news");

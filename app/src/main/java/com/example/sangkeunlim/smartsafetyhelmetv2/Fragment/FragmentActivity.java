@@ -2,11 +2,9 @@ package com.example.sangkeunlim.smartsafetyhelmetv2.Fragment;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -20,7 +18,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -163,6 +160,7 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
        // startService(new Intent(this,CheckSignal.class));
         SendToken();
+
     }
 
     public String getID(){ //아이디 반환을 위한 함수
@@ -501,6 +499,28 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         //Message msg = new Message();
         //msg.setType(Message.MSG_IN); //메세지 종류
         str = new String(data).trim(); //공백 제거 (전역변수 str사용)
+        if (str.equals("coDanger")){
+            Log.i("중수형",str);
+            try {
+                String s = task2.execute("call",userID+"/CO").get();
+                Log.i("중수형","1");
+            } catch (InterruptedException e) {
+                Log.i("중수형","2");
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                Log.i("중수형","3");
+                e.printStackTrace();
+            }
+        }else if (str.equals("fallDanger")){
+            Log.i("중수형",str);
+            try {
+                String s = task2.execute("call",userID+"/fall").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+        }
         int idx = str.indexOf(":"); //어떤 데이터인지와 데이터 값을 분류하기 위한
         if (str.contains("distance")) {
             str = str.substring(idx + 1);
@@ -521,24 +541,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         {
             str = str.substring(idx + 1);
             dataType = "4";
-        } else if (str.contains("coDanger")){
-            DangerSignal_CO();
-            try {
-                String s = task2.execute("call",userID+"/CO").get();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            }
-        }else if (str.contains("fallDanger")){
-            DangerSignal_CO();
-            try {
-                String s = task2.execute("call",userID+"/fall").get();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            }
         }
         if(str.equals("점심시간") || str.equals("/") || str.equals(""))
         {
@@ -553,9 +555,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
 
     private String attendanceList(String str) //출근여부 판단/처리 함수/**/
     {
-       // SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd"); //H는 시간 형식이 24
-        //Date currentTime = new Date();
-        //String day = sdf.format(currentTime);
         Time time = new Time(System.currentTimeMillis());
         Time time2 = new Time(System.currentTimeMillis());
         Time time3 = new Time(System.currentTimeMillis());
@@ -601,27 +600,6 @@ public class FragmentActivity extends AppCompatActivity implements BluetoothServ
         }
         Log.i("flag",String.valueOf(flag));
         return "";
-    }
-
-    private void DangerSignal_CO(){
-        vibrator.vibrate(new long[]{100,1000,100,500,100,500,100,1000}, 0); //무한 반복
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(FragmentActivity.this);
-        builder.setCancelable(false);
-        LayoutInflater factory = LayoutInflater.from(FragmentActivity.this);
-        final View view = factory.inflate(R.layout.alert_layout, null);
-        TextView textView = (TextView)view.findViewById(R.id.alertText);
-        textView.setText("CO농도 높음 주의 요망!");
-        builder.setView(view);
-        builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                vibrator.cancel();//닫기
-            }
-        });
-
-        builder.show();
     }
 
     private void SendToken(){

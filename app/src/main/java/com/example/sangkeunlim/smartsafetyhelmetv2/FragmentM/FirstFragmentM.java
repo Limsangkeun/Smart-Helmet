@@ -40,6 +40,7 @@ public class FirstFragmentM extends android.support.v4.app.Fragment {
         mWebView.loadUrl("http://wbkim11.cafe24.com/SmartHelmet/m_bbs.jsp?userID=" + userID);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
         mWebView.setWebViewClient(new WebViewClient());
         mWebView.setOnKeyListener(new View.OnKeyListener() {
             @Override

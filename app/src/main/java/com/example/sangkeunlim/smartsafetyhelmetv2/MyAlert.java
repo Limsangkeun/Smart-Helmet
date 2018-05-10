@@ -33,14 +33,15 @@ public class MyAlert extends Activity {
         String[] info =  message.split("/");
         if(info[1].equals("CO"))
         {
-            info[1] = "CO 농도 높음 주의 요망!";
+            info[1] = "CO 농도 높음 \n주의 요망!";
         }else if(info[1].equals("fall")){
-            info[1] = "추락 가능성 높음 주의 요망!";
+            info[1] = "추락 가능성 높음 \n주의 요망!";
         }
-        textView.setText(info[0]+"의 "+info[1]);
-        //  alert.setView(view);
-        //  builder.setMessage("CO 농도가 높습니다 주의하시기 바랍니다.");
-        // builder.setIcon(R.drawable.alert);
+       textView.setText(info[0]+"의 "+info[1]);
+     //   textView.setText(message);
+        // /  alert.setView(view);
+       //   builder.setMessage("CO 농도가 높습니다 주의하시기 바랍니다.");
+         builder.setIcon(R.drawable.alert);
         builder.setView(view);
         builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
             @Override

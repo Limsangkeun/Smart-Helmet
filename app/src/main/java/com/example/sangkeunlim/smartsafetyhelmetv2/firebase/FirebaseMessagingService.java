@@ -48,13 +48,12 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
                 .setWhen(System.currentTimeMillis())
                 .setContentIntent(pendingIntent);
 
-
+       // Log.i("중수형돌아오는",messageBody);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
         intent = new Intent(this, MyAlert.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("userID/DangerKind",messageBody);
         startActivity(intent);
     }
